@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background: rgb(255,245,163);
+    font-family: 'Nunito', sans-serif;
+    /*color: white;*/
+    font-size: 16px;
+}
+
+.navi{
+    height: 5rem;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(41,53,127);
+    margin-bottom: 40px;
+}
+.navi > div {
+    text-align: center;
+}
+
+.navi >div > a{
+    color: white;
+    letter-spacing: .05rem;
+    font-size:2.3rem;
+    font-family: Sylfaen;
+    margin-top:125px;
+    text-align:center;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: #fff;
+    --bg-transparent: rgba(255, 255, 255, 0);
+    --border-color: #2035a7;
+}
+
+.note {
+    display: inline-block;
+    margin-top: 20px;
+    height: 1200px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 32px;
+    border: 3px solid var(--border-color);
+    border-width: 2px 0px 2px 0px ;
+    background: linear-gradient(
+            to bottom,
+            var(--border-color) 0%,
+            var(--border-color) 1px,
+            var(--bg-transparent) 1px,
+            var(--bg-transparent) 100%
+    );
+    background-size: 100% 52px;
+}
+
+.sidebar{
+    width: 170px;
+    height: 100%;
+    border: solid red;
+    border-width: 0px 1px 0px 0px;
+    float: left;
+}
+.sidebar_line
+{
+    display: inline-block;
+    height: 100%;
+    width: 173px;
+    border: solid red;
+    border-width: 0px 1px 0px 0px;
+}
+
+.item{
+    position: relative;
+    margin: 60px auto;
+    padding: 5% 10%;
+    width: 450px;
+    height: 700px;
+    background: linear-gradient(135deg, #ff879b 81%,#ff879b 82%,#ffc7d0 100%);
+    cursor: url("../main/image/curser.png") 20 20, auto;
+    font-size: 35px;
+    font-family: 나눔손글씨 외할머니글씨;
+    border-bottom-right-radius: 60px 15px;
+    font-weight: bold;
+}
+
+table{
+    position: absolute;
+    width: 82.8%;
+    height: 80%;
+    margin: 0 auto;
+
+    /*background-color: red;*/
+}
+
+input{
+    position: absolute;
+    height: 40px;
+    margin-top: -5px;
+    margin-left: -7%;
+    background-color: transparent;
+    font-size: 35px;
+    font-family: 나눔손글씨 외할머니글씨;
+    font-weight: bold;
+}
+input:focus{
+    outline: none;
+}
+
+td{
+    vertical-align : top;
+    width: 30%;
+    float: left;
+    margin-top: 70px;
+}
+
+textarea{
+    float: bottom;
+    margin-left: -25%;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 나눔손글씨 외할머니글씨;
+    font-weight: bold;
+    outline: none;
+}
+
+#send{
+    position: absolute;
+    width: 120px;
+    bottom: 150px;
+    cursor: pointer;
+    margin: 0 auto;
+}

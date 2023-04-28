@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "나눔손글씨 가람연꽃";
+    src: local("C:\Users\audwo\OneDrive\Desktop\project\dashboard-project\dashboard\sonfont");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 80%;
+}
+
+body {
+    background: rgb(255, 245, 163);
+    font-family: 'Nunito', sans-serif;
+    /*color: white;*/
+    font-size: 16px;
+}
+
+.navi {
+    height: 5rem;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(41, 53, 127);
+}
+
+.navi > div {
+    text-align: center;
+}
+
+.navi > div > a {
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    font-family: a시월구일1;
+    font-size: 32px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.sidebar {
+    width: 170px;
+    height: 100%;
+    border: solid red;
+    border-width: 0px 1px 0px 0px;
+    float: left;
+}
+
+.sidebar_line {
+    display: inline-block;
+    height: 100%;
+    width: 173px;
+    border: solid red;
+    border-width: 0px 1px 0px 0px;
+}
+
+.sidebar_line div {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 8px;
+}
+
+:root {
+    --bg-color: #fff;
+    --bg-transparent: rgba(255, 255, 255, 0);
+    --border-color: #2035a7;
+}
+
+.note {
+    display: inline-block;
+    margin-top: 20px;
+    height: 1200px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 32px;
+    border: 3px solid var(--border-color);
+    border-width: 2px 0px 2px 0px;
+    background: linear-gradient(
+            to bottom,
+            var(--border-color) 0%,
+            var(--border-color) 1px,
+            var(--bg-transparent) 1px,
+            var(--bg-transparent) 100%
+    );
+    background-size: 100% 52px;
+}
+
+#container {
+    /*display: inline-block;*/
+    width: calc(100% - 173px);
+    height: 100%;
+    float: right;
+}
+
+.grab {
+    /*margin: 0;*/
+    width: 100%;
+    height: 50px;
+    background-color: #fa7f8c;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.grab:nth-child(2n) {
+    background-color: #ffde65;
+}
+
+
+.item {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+    height: 250px;
+    border: none;
+    font-family: 나눔손글씨 외할머니글씨;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom-right-radius: 60px 15px;
+    /*z-index: 100;*/
+    background: linear-gradient(135deg, #ff879b 81%, #ff879b 82%, #ffc7d0 100%);
+}
+
+.item:nth-child(2n) {
+    background: linear-gradient(135deg, #ffe787 81%, #ffe387 82%, #fff8b6 100%);
+}
+
+.item:nth-child(3n) {
+    background: linear-gradient(135deg, #6ecdff 81%, #74cbff 82%, #aee5ff 100%);
+}
+
+.item:active {
+    border: solid 4px #111111;
+    border-radius: 3px;
+    border-bottom-right-radius: 60px 15px;
+}
+
+/*.yellow{*/
+/*    background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%);*/
+/*}*/
+
+/*.pink{*/
+/*    background: linear-gradient(135deg, #ff879b 81%,#ff879b 82%,#ffc7d0 100%);*/
+/*}*/
+
+/*.green{*/
+/*    background: linear-gradient(135deg, #b1ff87 81%,#b1ff87 82%,#dbffc7 100%);*/
+/*}*/
+
+#real_dash > div {
+    display: inline-block;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+#real_dash > button {
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: -30px;
+    width: 60px;
+    height: 20px;
+    background-color: #fd2c54;
+    border-radius: 10px;
+    color: white;
+}
+
+/*메인 컨텐츠*/
+
+button {
+    font-family: a시월구일1;
+    font-size: small;
+}
+
+button:hover {
+    font-weight: bold;
+    width: 62px;
+    height: 22px;
+}
+
+.sidebar_line > button {
+    width: 98%;
+    height: 48px;
+    margin-top: 50px;
+    padding-left: 15px;
+    left: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 30px;
+    font-family: 나눔손글씨 외할머니글씨;
+    font-weight: bold;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dash_main_style.css">
+</head>
+<body onload="init()">
+    <div class="navi">
+        <div>
+        <a href="index.html" class="dashboard__bar__item--btn">Simple is the Best</a>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <div class="note">
+        <div class="sidebar">
+            <div class="sidebar_line">
+                <ul>
+                    <li><div><a href="#">K-mozzi</a></div></li>
+                    <li><div class="sub_menu_p"><a href="https://k-mozzi.tistory.com/" target="_blank">Blog</a></div> </li>
+                    <li><div class="sub_menu_p"><a href="https://github.com/k-mozzi" target="_blank">Github</a></div> </li>
+                </ul>
+                <ul>
+                    <li><div><a href="#">Re-hwi</a></div></li>
+                    <li><div class="sub_menu_g"><a href="https://re-hwi.tistory.com/" target="_blank">Blog</a></div> </li>
+                    <li><div class="sub_menu_g"><a href="https://github.com/myeong-jae-hwi" target="_blank">Github</a></div> </li>
+                </ul>
+                <ul>
+                    <li><div><a href="#">Menu</a></div></li>
+                    <li><div class="sub_menu_y"><a href="../dashboard/dashboard.php">Dash board</a></div> </li>
+                </ul>
+                <ul>
+                    <li><div><a href="#">Profile</a></div></li>
+                    <li><div class="sub_menu_b"><a href="../main/main_register.php">Sign up</a></div> </li>
+                    <li><div class="sub_menu_b"><a href="../main/main_login.php">Login</a></div> </li>
+                </ul>
+            </div>
+        </div>
+        <div id="container">
+            <canvas id="jsCanvas" class="canvas">
+            </canvas>
+        </div>
+        <div id="footer">
+            <p>Tel. 010 4465 2378</p>
+        </div>
+
+    </div>
+    <script>
+        const canvas = document.getElementById("jsCanvas");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = 1500;
+        canvas.height = 1500;
+
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 2.5;
+
+        let painting = false;
+
+        function startPainting() {
+            painting=true;
+        }
+        function stopPainting(event) {
+            painting=false;
+        }
+
+        function onMouseMove(event) {
+            const x = event.offsetX - 15;
+            const y = event.offsetY + 70;
+            if(!painting) {
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+            }
+            else {
+                ctx.lineTo(x, y);
+                ctx.stroke();
+            }
+        }
+
+        if (canvas) {
+            canvas.addEventListener("mousemove", onMouseMove);
+            canvas.addEventListener("mousedown", startPainting);
+            canvas.addEventListener("mouseup", stopPainting);
+            canvas.addEventListener("mouseleave", stopPainting);
+        }
+    </script>
+</body>
+</html>

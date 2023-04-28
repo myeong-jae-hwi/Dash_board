@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #ccc;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+
+.dashboard__bar {
+    display: block;
+    background: #333333;
+    position: fixed;
+    width: 100%;
+    height: 3.25rem;
+    line-height: 200%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid gray;
+}
+
+.dashboard__bar__item {
+    overflow: hidden;
+}
+
+.dashboard__bar__item:nth-child(1) {
+    float: left;
+}
+
+.dashboard__bar__item:nth-child(2) {
+    float: right;
+    margin-right: 0.1rem;
+    text-align: center;
+}
+
+.dashboard__bar__item:nth-child(3) {
+    float: right;
+    text-align: center;
+}
+
+.dashboard__bar__item:nth-child(4) {
+    float: right;
+    text-align: center;
+}
+
+
+.dashboard__bar__item--btn {
+    display: block;
+    padding: 10px 20px;
+    color: #FDFDFD;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+
+.dashboard__bar__item--logo i {
+    margin: 0 15px;
+}
+
+.dashboard__bar__item--btn i {
+    margin-right: 10px;
+}
+
+.right-arrow {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #F9F4D5;
+    border-bottom: 10px solid transparent;
+    right: 0;
+    bottom: 15px;
+    z-index: 9;
+    opacity: 0;
+}
+
+.dashboard__submenu {
+    background: #434A50;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.7s;
+}
+
+.dashboard__submenu a {
+    display: block;
+    padding: 15px 20px;
+    color: #FDFDFD;
+    font-size: 14px;
+    position: relative;
+    text-decoration: none;
+}
+
+.dashboard__submenu a:hover {
+    color: #00A0D2;
+}
+
+.dashboard__bar__item:hover .dashboard__submenu {
+    max-height: 15em;
+}
+
+
+.dashboard__bar__item:target .dashboard__bar__item--btn {
+    color: #FDFDFD;
+}
+
+.dashboard__bar__item--btn:hover,
+.dashboard__bar__item--logo:hover {
+    background: #222222;
+    color: #00A0D2;
+}
+
+/*메인 컨텐츠*/
+#real_dash {
+    margin: 10%;
+}
+
+#real_dash > table {
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 3rem;
+}
+
+#real_dash > tr {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+
+}
+
+#real_dash > td {
+    border-bottom: 1px solid #efefef;
+    padding: 10px;
+}
+
+#real_dash > table .even {
+    background: #c0c0c0;
+}
+
+#real_dash > .text {
+    text-align: center;
+    padding-top: 2rem;
+    color: #000000
+}
+
+/*#real_dash > .text:hover {*/
+/*    text-decoration: underline;*/
+/*}*/
+
+#real_dash > a:link {
+    color: #57A0EE;
+    text-decoration: none;
+}
+
+#real_dash > a:hover {
+    text-decoration: underline;
+}
+
+#real_dash > button {
+    background-color: #ccc;
+}
+
+
+#real_dash > p {
+    padding: 1rem 0 1rem 0;
+}

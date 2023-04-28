@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 80%;
+}
+
+body {
+    background: rgb(255,245,163);
+    font-family: 'Nunito', sans-serif;
+    /*color: white;*/
+    font-size: 16px;
+}
+
+li{
+    height: 52px;
+}
+
+.navi{
+    height: 5rem;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(41,53,127);
+}
+.navi > div {
+    text-align: center;
+}
+.navi >div > a{
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    font-family: Sylfaen;
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+:root {
+    --bg-color: #fff;
+    --bg-transparent: rgba(255, 255, 255, 0);
+    --border-color: #2035a7;
+}
+
+.note {
+    display: inline-block;
+    margin-top: 60px;
+    height: 1200px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 32px;
+    border: 3px solid var(--border-color);
+    border-width: 2px 0px 2px 0px ;
+    background: linear-gradient(
+            to bottom,
+            var(--border-color) 0%,
+            var(--border-color) 1px,
+            var(--bg-transparent) 1px,
+            var(--bg-transparent) 100%
+    );
+    background-size: 100% 52px;
+}
+
+.note > img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.sidebar{
+    width: 170px;
+    height: 100%;
+    border: solid red;
+    border-width: 0px 1px 0px 0px;
+    float: left;
+}
+.sidebar_line
+{
+    display: inline-block;
+    height: 100%;
+    width: 173px;
+    border: solid red;
+    border-width: 0px 1px 0px 0px;
+}
+
+.sidebar_line div{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 8px;
+}
+
+.sidebar_line a{
+    text-decoration: none;
+    font-family: "Ink Free";
+    color: black;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.sidebar_line > ul:hover .sub_menu_p a{
+    display: inline-block;
+}
+
+.sidebar_line > ul:hover .sub_menu_g a{
+    display: inline-block;
+}
+
+.sidebar_line > ul:hover .sub_menu_y a{
+    display: inline-block;
+}
+
+.sidebar_line > ul:hover .sub_menu_b a{
+    display: inline-block;
+}
+
+.sub_menu_p, .sub_menu_g, .sub_menu_y, .sub_menu_b {
+    font-family: "Ink Free";
+    display: inline-block;
+}
+
+.sub_menu_p a {
+    display: none;
+    font-size: medium;
+    background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(255, 38, 174, 0.69) 50%);
+    background-size: 200%;
+    transition: .35s;
+}
+.sub_menu_p a:hover {
+    background-position: -100% 0;
+}
+
+.sub_menu_g a {
+    display: none;
+    font-size: medium;
+    background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(165, 255, 0, 0.69) 50%);
+    background-size: 200%;
+    transition: .35s;
+}
+.sub_menu_g a:hover {
+    background-position: -100% 0;
+}
+
+.sub_menu_y a {
+    display: none;
+    font-size: medium;
+    background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(188, 0, 255, 0.69) 50%);
+    background-size: 200%;
+    transition: .35s;
+}
+.sub_menu_y a:hover {
+    background-position: -100% 0;
+}
+
+.sub_menu_b a {
+    display: none;
+    font-size: medium;
+    background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(38, 190, 255, 0.69) 50%);
+    background-size: 200%;
+    transition: .35s;
+}
+.sub_menu_b a:hover {
+    background-position: -100% 0;
+}
+
+#container {
+    position: relative;
+    width: calc(100% - 175px);
+    height: 97%;
+    margin-left: 175px;
+    /*background-color: red;*/
+}
+#footer{
+    width: 100%;
+    height: 70px;
+    /*background-color: #0073AA;*/
+    float: bottom;
+    z-index: 100;
+}
+
+.text {
+    color: #2c2c2c;
+    letter-spacing: .05rem;
+    font-size:2.3rem;
+    font-family: Sylfaen;
+    margin-top:125px;
+    text-align:center;
+}
+
+.canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    cursor: url("../main/image/curser.png") 20 20, auto;
+}
+
+p{
+    font-family: "Ink Free";
+    float: right;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
